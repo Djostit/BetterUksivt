@@ -21,10 +21,7 @@ services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 app.UseSwagger()
-    .UseSwaggerUI(x =>
-    {
-        x.SwaggerEndpoint("/swagger/v1/swagger.json", "Users.Api v1");
-    });
+    .UseSwaggerUI();
 
 //app.UseHttpsRedirection();
 

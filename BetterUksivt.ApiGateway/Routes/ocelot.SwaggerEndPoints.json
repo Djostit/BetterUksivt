@@ -1,22 +1,11 @@
 {
   "SwaggerEndPoints": [
     {
-      "Key": "gateway",
-      "TransformByOcelotConfig": false,
-      "Config": [
-        {
-          "Name": "Api Gateway",
-          "Version": "1",
-          "Url": "http://localhost:5000/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
       "Key": "users",
       "TransformByOcelotConfig": true,
       "Config": [
         {
-          "Name": "Users.API",
+          "Name": "Users API",
           "Version": "1",
           "Url": "http://localhost:5000/users/swagger/v1/swagger.json"
         }
