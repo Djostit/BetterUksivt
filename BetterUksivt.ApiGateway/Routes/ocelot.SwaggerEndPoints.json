@@ -10,6 +10,17 @@
           "Url": "http://localhost:5000/users/swagger/v1/swagger.json"
         }
       ]
+    },
+    {
+      "Key": "schedules",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Schedules API",
+          "Version": "1",
+          "Url": "http://localhost:5000/schedules/swagger/v1/swagger.json"
+        }
+      ]
     }
   ]
 }

@@ -1,22 +1,17 @@
-using Microsoft.OpenApi.Models;
 using BetterUksivt.Infrastructure.Extensions;
-using Users.Dal.Context;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
-services.AddDbContext<UsersContext>(opt => opt.UseInMemoryDatabase("users"));
-
 services.AddLowerRouting();
-
 services.AddControllers();
-
 services.AddEndpointsApiExplorer();
+services.AddSwaggerGen();
 
 services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Users API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Schedules API", Version = "v1" });
 });
 
 var app = builder.Build();

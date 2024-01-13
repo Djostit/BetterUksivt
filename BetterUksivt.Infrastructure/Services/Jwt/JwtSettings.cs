@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BetterUksivt.Infrastructure.Services.Jwt
 {
-    internal class JwtSettings
+    public class JwtSettings
     {
+        public string Issuer { get; set; }
+        public string Audience { get; set; }
+        public string Key { get; set; }
     }
 }

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Users.Api.Controllers
+namespace Schedules.Api.Controllers
 {
     [Route("api")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class SchedulesController : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> Get() => Ok("Get");

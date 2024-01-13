@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Users.Dal.Entities;
 
 namespace Users.Dal.Context
 {
@@ -12,5 +13,6 @@ namespace Users.Dal.Context
         public UsersContext(DbContextOptions options) : base(options)
         {
         }
+        public virtual DbSet<User> Users { get; set; } = null!;
     }
 }

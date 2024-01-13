@@ -3,19 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterUksivt.ApiGateway", "BetterUksivt.ApiGateway\BetterUksivt.ApiGateway.csproj", "{44C7508A-AFF8-44AE-835E-E55FB006F4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterUksivt.ApiGateway", "BetterUksivt.ApiGateway\BetterUksivt.ApiGateway.csproj", "{44C7508A-AFF8-44AE-835E-E55FB006F4AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{70D6C279-674F-407C-8933-AEA48CD802F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{75B953BC-DA4E-49D7-8B56-D3EFC1DF4A49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Api", "Users\Users.Api\Users.Api.csproj", "{59F8AA78-65FB-468B-8DF4-BD3251AC3A45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.Api", "Users\Users.Api\Users.Api.csproj", "{59F8AA78-65FB-468B-8DF4-BD3251AC3A45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Dal", "Users\Users.Dal\Users.Dal.csproj", "{1E4F5B5B-D000-4474-BC1D-F1741C89F2B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.Dal", "Users\Users.Dal\Users.Dal.csproj", "{1E4F5B5B-D000-4474-BC1D-F1741C89F2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.Domain", "Users\Users.Domain\Users.Domain.csproj", "{CFF0B718-490F-4343-9519-5CCE7FBD9BFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.Domain", "Users\Users.Domain\Users.Domain.csproj", "{CFF0B718-490F-4343-9519-5CCE7FBD9BFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterUksivt.Infrastructure", "BetterUksivt.Infrastructure\BetterUksivt.Infrastructure.csproj", "{12433352-3F39-4A84-8176-8E5E72991061}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterUksivt.Infrastructure", "BetterUksivt.Infrastructure\BetterUksivt.Infrastructure.csproj", "{12433352-3F39-4A84-8176-8E5E72991061}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Schedules", "Schedules", "{CBCAA7DE-F372-44A5-8B08-4B7189FF00BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedules.Api", "Schedules\Schedules.Api\Schedules.Api.csproj", "{7C7F8DAC-D2E2-4C68-B421-441512DE1DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedules.Dal", "Schedules\Schedules.Dal\Schedules.Dal.csproj", "{D469BCDB-F001-4F21-B3C8-109DF84C83CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedules.Domain", "Schedules\Schedules.Domain\Schedules.Domain.csproj", "{3D08FE11-8CCD-40B9-B0C3-331CCE880434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +51,18 @@ Global
 		{12433352-3F39-4A84-8176-8E5E72991061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12433352-3F39-4A84-8176-8E5E72991061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12433352-3F39-4A84-8176-8E5E72991061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C7F8DAC-D2E2-4C68-B421-441512DE1DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7F8DAC-D2E2-4C68-B421-441512DE1DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7F8DAC-D2E2-4C68-B421-441512DE1DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7F8DAC-D2E2-4C68-B421-441512DE1DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D469BCDB-F001-4F21-B3C8-109DF84C83CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D469BCDB-F001-4F21-B3C8-109DF84C83CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D469BCDB-F001-4F21-B3C8-109DF84C83CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D469BCDB-F001-4F21-B3C8-109DF84C83CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D08FE11-8CCD-40B9-B0C3-331CCE880434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D08FE11-8CCD-40B9-B0C3-331CCE880434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D08FE11-8CCD-40B9-B0C3-331CCE880434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D08FE11-8CCD-40B9-B0C3-331CCE880434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +72,10 @@ Global
 		{59F8AA78-65FB-468B-8DF4-BD3251AC3A45} = {75B953BC-DA4E-49D7-8B56-D3EFC1DF4A49}
 		{1E4F5B5B-D000-4474-BC1D-F1741C89F2B2} = {75B953BC-DA4E-49D7-8B56-D3EFC1DF4A49}
 		{CFF0B718-490F-4343-9519-5CCE7FBD9BFF} = {75B953BC-DA4E-49D7-8B56-D3EFC1DF4A49}
+		{CBCAA7DE-F372-44A5-8B08-4B7189FF00BE} = {70D6C279-674F-407C-8933-AEA48CD802F4}
+		{7C7F8DAC-D2E2-4C68-B421-441512DE1DE4} = {CBCAA7DE-F372-44A5-8B08-4B7189FF00BE}
+		{D469BCDB-F001-4F21-B3C8-109DF84C83CE} = {CBCAA7DE-F372-44A5-8B08-4B7189FF00BE}
+		{3D08FE11-8CCD-40B9-B0C3-331CCE880434} = {CBCAA7DE-F372-44A5-8B08-4B7189FF00BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A78A8670-423F-4E8E-ADC2-5950101723E0}
