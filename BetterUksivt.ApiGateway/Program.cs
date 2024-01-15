@@ -1,3 +1,4 @@
+using BetterUksivt.ApiGateway;
 using BetterUksivt.ApiGateway.Config;
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;
@@ -13,6 +14,8 @@ configuration.AddOcelotWithSwaggerSupport(x => x.Folder = routes);
 
 services.AddOcelot(configuration).AddPolly();
 services.AddSwaggerForOcelot(configuration);
+
+services.AddHostedService<ConsoleLoggerService>();
 
 configuration.SetBasePath(Directory.GetCurrentDirectory())
     .AddOcelot(routes, builder.Environment)
