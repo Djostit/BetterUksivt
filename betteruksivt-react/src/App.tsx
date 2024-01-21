@@ -4,19 +4,23 @@ import About from "./pages/About";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home";
+import BtnScroll from "./components/btnScroll/BtnScroll";
+import SignIn from "./pages/SignIn";
 
 const App = () => {
-  return(
+  return (
     <div className="flex flex-col min-h-screen">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/products" element={<Products />}/>
-        <Route path="/about" element={<About />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
-      <Footer/>
+      <Footer />
+      <BtnScroll />
     </div>
   );
-}
- 
+};
+
 export default App;

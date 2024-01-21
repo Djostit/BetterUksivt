@@ -8,26 +8,34 @@ import Modal from "../components/Modal";
 import CreateProduct from "../components/CreateProduct";
 
 const Products = () => {
-    const { loading, error, products, addProduct } = useProducts()
-    const { modal, open, close } = useContext(ModalContext)
-    return (
+  const { loading, error, products, addProduct } = useProducts();
+  const { modal, open, close } = useContext(ModalContext);
+  return (
     <div className="container mx-auto max-w-2xl pt-20 mb-20">
-      { loading &&  <Loader />}
-      { error && <ErrorMessage error = { error }/> }
-      { products.map(x => <Product product={x} key={x.id}></Product>) }
-      { modal && 
-      <Modal title="Create new product" onClose={close}>
-        <CreateProduct onCreate={x => {
-          close()
-          addProduct(x)
-        }}/>
-      </Modal>}
+      {loading && <Loader />}
+      {error && <ErrorMessage error={error} />}
+      {products.map((x) => (
+        <Product product={x} key={x.id}></Product>
+      ))}
+      {modal && (
+        <Modal title="Create new product" onClose={close}>
+          <CreateProduct
+            onCreate={(x) => {
+              close();
+              addProduct(x);
+            }}
+          />
+        </Modal>
+      )}
 
-      <button 
-      className="fixed bottom-5 right-5 rounded-full bg-red-700 text-white px-4 py-2"
-      onClick={open}>+</button>
+      <button
+        className="fixed bottom-5 right-5 rounded-full bg-red-700 text-white px-4 py-2"
+        onClick={open}
+      >
+        +
+      </button>
     </div>
-)
-}
- 
+  );
+};
+
 export default Products;
