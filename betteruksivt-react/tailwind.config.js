@@ -1,10 +1,14 @@
-module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
+export const content = [
+  "./src/**/*.{js,jsx,ts,tsx}",
+  "./public/index.html",
+];
+export const theme = {
+  extend: {
+    fontFamily: {
+      sans: ['Montserrat Alternates', 'sans-serif']
+    },
   },
-  plugins: [],
-}
+};
+export const plugins = [];
+export const darkMode = "class";
 
