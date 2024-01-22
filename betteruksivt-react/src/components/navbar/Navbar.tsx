@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="relactive transition-all ease-linear px-4 sm:px-6 md:px-8 pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
+    <div
+      id="nav"
+      className="relactive transition-all ease-linear px-4 sm:px-6 md:px-8 pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200"
+    >
       <Link to="/">
         <span className="transition-all ease-linear font-bold text-slate-900 dark:text-slate-200 w-auto h-5">
           BetterUksivt

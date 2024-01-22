@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const BtnScroll = () => {
   const [visible, setVisible] = useState(false);
@@ -17,11 +18,16 @@ const BtnScroll = () => {
   }, []);
 
   return (
-    <button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    <Link
+      activeClass="active"
+      to="nav"
+      spy={true}
+      smooth={true}
+      offset={-100}
+      duration={500}
       className={`${
         visible ? "block" : "hidden"
-      } transition-all ease-linear fixed bottom-5 right-5 rounded-full px-4 py-2`}
+      } transition-all ease-linear fixed bottom-5 right-5 rounded-full px-4 py-2 cursor-pointer`}
     >
       <div className="transition-all ease-linear animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
         <svg
@@ -36,7 +42,7 @@ const BtnScroll = () => {
           <path d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"></path>
         </svg>
       </div>
-    </button>
+    </Link>
   );
 };
 

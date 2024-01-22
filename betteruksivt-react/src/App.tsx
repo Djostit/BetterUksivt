@@ -6,16 +6,22 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home";
 import BtnScroll from "./components/btnScroll/BtnScroll";
 import SignIn from "./pages/SignIn";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signin" element={<SignIn />} />
+        {[
+          { path: "/", component: <Home /> },
+          { path: "*", component: <NotFound /> },
+          { path: "/about", component: <About /> },
+          { path: "/products", component: <Products /> },
+          { path: "/signin", component: <SignIn /> },
+        ].map((x) => (
+          <Route path={x.path} element={x.component} />
+        ))}
       </Routes>
       <Footer />
       <BtnScroll />

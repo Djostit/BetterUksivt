@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div>
+    <div className="mb-20">
       <main className="relative max-w-5xl mx-auto min-h-screen">
         <div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="px-4 sm:px-0">
