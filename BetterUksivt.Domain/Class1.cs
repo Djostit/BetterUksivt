@@ -1,4 +1,4 @@
-﻿namespace Users.Domain
+﻿namespace BetterUksivt.Domain
 {
     public class Class1
     {
